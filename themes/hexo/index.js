@@ -33,6 +33,7 @@ import TocDrawer from './components/TocDrawer'
 import TocDrawerButton from './components/TocDrawerButton'
 import CONFIG from './config'
 import { Style } from './style'
+import './styles.css' // 确保导入我们的样式文件
 
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
@@ -42,6 +43,26 @@ const AlgoliaSearchModal = dynamic(
 // 主题全局状态
 const ThemeGlobalHexo = createContext()
 export const useHexoGlobal = () => useContext(ThemeGlobalHexo)
+
+// 添加全局类名应用现代化设计
+const applyModernDesign = (Component) => {
+  return (props) => {
+    const modernClasses = CONFIG.HEXO_MODERN_DESIGN 
+      ? 'hexo-modern-theme' 
+      : ''
+    
+    return (
+      <div className={modernClasses}>
+        <Component {...props} />
+      </div>
+    )
+  }
+}
+
+// 包装主题组件，应用现代设计
+const wrapWithModernDesign = (Layout) => {
+  return applyModernDesign(Layout)
+}
 
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
@@ -436,3 +457,6 @@ export {
   LayoutTagIndex,
   CONFIG as THEME_CONFIG
 }
+
+// 确保导出时应用现代设计包装
+export default wrapWithModernDesign(LayoutBase)

@@ -39,6 +39,20 @@ const CONFIG = {
   HEXO_WIDGET_TO_TOP: true,
   HEXO_WIDGET_TO_COMMENT: true, // 跳到评论区
   HEXO_WIDGET_DARK_MODE: true, // 夜间模式
-  HEXO_WIDGET_TOC: true // 移动端悬浮目录
+  HEXO_WIDGET_TOC: true, // 移动端悬浮目录
+
+  // 现代化美观设置
+  HEXO_MODERN_DESIGN: true, // 启用现代化设计
+  HEXO_CARD_BORDER_RADIUS: '1rem', // 卡片圆角
+  HEXO_FROSTED_GLASS: true, // 启用毛玻璃效果
+  HEXO_GLASSMORPHISM: true, // 玻璃态设计
+  HEXO_ANIMATION_ENABLE: true, // 启用动画效果
+  HEXO_HOVER_SHADOW: true, // 鼠标悬停阴影
+  HEXO_IMAGE_SHADOW: true, // 图片阴影效果
+  HEXO_POST_HOVER_SCALE: true, // 文章卡片悬停放大效果
+
+  // 社交媒体链接
+  HEXO_TELEGRAM_LINK: 'https://t.me/NekoMirra', // Telegram链接
+  HEXO_PERSONAL_SITE: 'https://mirradev.eu.org/' // 个人主页链接
 }
 export default CONFIG
