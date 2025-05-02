@@ -10,11 +10,11 @@ import { useEffect } from 'react'
 const Gitalk = ({ frontMatter }) => {
   const gitalkCSSCDN = siteConfig('COMMENT_GITALK_CSS_CDN_URL')
   const gitalkJSCDN = siteConfig('COMMENT_GITALK_JS_CDN_URL')
-  const clientId = siteConfig('COMMENT_GITALK_CLIENT_ID')
-  const clientSecret = siteConfig('COMMENT_GITALK_CLIENT_SECRET')
+  const clientId = "Ov23liRKHQu3ukVR2Hku"
+  const clientSecret = "ee9e6d9c1ec917e59e88a2b954a234a057edc29f"
   const repo = "MirraNext-Talk"
   const owner = "NekoMirra"
-  const admin = siteConfig('COMMENT_GITALK_ADMIN').split(',')
+  const admin = "NekoMirra"
   const distractionFreeMode = siteConfig('COMMENT_GITALK_DISTRACTION_FREE_MODE')
 
   const loadGitalk = async() => {
