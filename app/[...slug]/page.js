@@ -1,1 +1,1 @@
-// This file has been removed as it conflicts with the Pages Router architecture.
+// 此文件应该被删除
