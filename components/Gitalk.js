@@ -13,7 +13,7 @@ const Gitalk = ({ frontMatter }) => {
   const clientId = siteConfig('COMMENT_GITALK_CLIENT_ID')
   const clientSecret = siteConfig('COMMENT_GITALK_CLIENT_SECRET')
   const repo = "MirraNext-Talk"
-  const owner = siteConfig('COMMENT_GITALK_OWNER')
+  const owner = "NekoMirra"
   const admin = siteConfig('COMMENT_GITALK_ADMIN').split(',')
   const distractionFreeMode = siteConfig('COMMENT_GITALK_DISTRACTION_FREE_MODE')
 
