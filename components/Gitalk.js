@@ -43,7 +43,19 @@ const Gitalk = ({ frontMatter }) => {
     loadGitalk()
   }, [])
 
-  return <div id="gitalk-container"></div>
+  return (
+    <>
+      <div id="gitalk-container"></div>
+      <div className="text-center mt-5 text-gray-500 text-sm">
+        <button 
+          onClick={() => loadGitalk()} 
+          className="hover:text-black transition-colors duration-200"
+        >
+          重新加载评论 | 初始化评论区
+        </button>
+      </div>
+    </>
+  )
 }
 
 export default Gitalk
